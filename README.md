@@ -10,7 +10,7 @@ Feito com ReactJS, NextJS, FaunaDB, Prismic CMS, Tailwind
 
 ## 🌎 Versão Ao Vivo
 
-[![vercel](https://img.shields.io/badge/vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://ignite-lab-delta.vercel.app/)
+[![vercel](https://img.shields.io/badge/vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://o3news.vercel.app/)
 
 ## 🛠 Technologies
 
