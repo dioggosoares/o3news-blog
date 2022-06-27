@@ -1,0 +1,38 @@
+{
+  "id": "6b7832a9-a0c7-4046-a90f-99de0f9298f3",
+  "uid": "quaerat-quia-aut",
+  "type": "author",
+  "data": {
+    "image": {
+      "dimensions": {
+        "width": null,
+        "height": null
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=null&h=null&fit=crop"
+    },
+    "name": [
+      {
+        "type": "heading1",
+        "text": "Aggregate proactive eyeballs",
+        "spans": []
+      }
+    ],
+    "instagram": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "linkedin": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Consequat cupidatat eu do dolor fugiat minim ea dolore duis. Dolore do et cillum.",
+        "spans": []
+      }
+    ]
+  }
+}

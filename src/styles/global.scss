@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    @apply text-[93.75%];
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    @apply text-[87.5%];
+  }
+}
+
+body {
+  @apply bg-graycustom-900 text-white;
+}
+
+body,
+input,
+textarea,
+select {
+  @apply font-roboto;
+  font: 400 1rem;
+}
+
+button {
+  @apply cursor-pointer font-ubuntu;
+  font: 400 1rem;
+}
+
+a {
+  @apply text-inherit no-underline;
+}
+
+// HEADER BUTTONS
+#header {
+  button {
+    @apply ml-auto;
+  }
+}
+
+// NAVBAR STYLE LINK
+#navbar {
+  #list {
+    li a {
+      @apply flex relative py-0 px-2 h-20 leading-[5rem] text-graycustom-300 hover:text-white transition-colors duration-150 ease-linear;
+
+      & + a {
+        @apply ml-8;
+      }
+
+      &:hover {
+        @apply text-white;
+      }
+
+      &:hover::after {
+        @apply content-[''] absolute left-0 bottom-0 w-full h-[0.188rem] rounded-t-[10px] bg-gold-500;
+      }
+
+      &.active {
+        @apply text-white font-bold;
+      }
+
+      &.active::after {
+        @apply content-[''] absolute left-0 bottom-0 w-full h-[0.188rem] rounded-t-[10px] bg-gold-500;
+      }
+    }
+  }
+}
+
+// MOBILE NAVBAR STYLE LINK
+#mobileNavbar a {
+  @apply flex relative py-0 px-8 w-full h-10 leading-[2.5rem] text-graycustom-300 hover:text-white transition-colors duration-150 ease-linear;
+
+  & + a {
+    @apply md:ml-8;
+  }
+
+  &:hover {
+    @apply text-white bg-graycustom-999;
+  }
+
+  &:hover::after {
+    @apply content-[''] absolute left-0 bottom-0 w-[0.25rem] h-full rounded-l-[10px] bg-gold-500;
+  }
+
+  &.active {
+    @apply text-white font-bold bg-gradient-to-r from-graycustom-800/50 to-transparent;
+  }
+
+  &.active::after {
+    @apply content-[''] absolute left-0 bottom-0 w-[0.25rem] h-full rounded-l-[10px] bg-gold-500;
+  }
+}
+
+// LINK POSTS
+#posts a {
+  & + a {
+    @apply mt-8 pt-8 border-t border-graycustom-700;
+  }
+
+  &:hover {
+    @apply text-gold-500;
+  }
+}
+
+// POST CONTENT
+#post {
+  h2 {
+    @apply text-3xl leading-10 font-bold;
+  }
+
+  #postContent {
+    a {
+      @apply underline underline-offset-4 text-gold-500;
+    }
+
+    p,
+    ul,
+    ol {
+      @apply my-6 mx-0;
+    }
+
+    ul {
+      @apply pl-12 marker:text-gold-500 list-outside list-disc;
+
+      li {
+        @apply my-2 mx-0;
+      }
+    }
+
+    ol {
+      @apply pl-12 marker:text-gold-500 list-outside list-decimal;
+
+      li {
+        @apply my-2 mx-0;
+      }
+    }
+
+    &.previewContent {
+      @apply bg-gradient-to-b from-graycustom-100 to-transparent bg-clip-text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.tooltip-pop-over-up::before {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  margin-left: 85%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #1f2729 transparent transparent transparent;
+}
+
+.tooltip-pop-over-down::before {
+  content: " ";
+  position: absolute;
+  top: -19%;
+  margin-left: 80%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #1f2729 transparent;
+}
+
+.toastProgress {
+  background: #eba417 !important;
+}
+
+.gray-glassmorphism {
+  @apply bg-graycustom-900/50 backdrop-blur;
+  -webkit-backdrop-filter: blur(0.5rem);
+}
+
+.bg_section {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: radial-gradient(ellipse at 0% 0%, #118ab2 0, transparent 65%),
+    radial-gradient(ellipse at 100% 0%, #06d6a0 0, transparent 65%),
+    radial-gradient(ellipse at 0% 0%, #352755 0, transparent 20%);
+}
+
+// SCROLL CUSTOM
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* width */
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-graycustom-100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gold-500;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gold-500;
+}
+//////////////////////

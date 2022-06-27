@@ -1,0 +1,29 @@
+{
+  "id": "955a93d0-a4ba-4384-8ca5-48a9e2418dd3",
+  "uid": "numquam-quia-et",
+  "type": "my-post-type",
+  "data": {
+    "category": "Saúde integrativa",
+    "subject": [
+      {
+        "type": "paragraph",
+        "text": "Pariatur consequat velit non dolor in. Duis do aliquip mollit.",
+        "spans": []
+      }
+    ],
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Synthesize impactful mindshare",
+        "spans": []
+      }
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Eiusmod in voluptate cupidatat consequat ullamco excepteur occaecat veniam ea elit incididunt aliquip et labore laboris.",
+        "spans": []
+      }
+    ]
+  }
+}
