@@ -5,8 +5,7 @@
 
 ## 📄 Descrição
 
-Blog desenvolvido para postagem de conteúdo sobre estética, saúde integrativa e ozonioterapia.
-Feito com ReactJS, NextJS, FaunaDB, Prismic CMS, Tailwind
+Blog desenvolvido para postagem de conteúdo sobre estética, saúde integrativa e ozonioterapia, feito com ReactJS, NextJS, FaunaDB, Prismic CMS, Tailwind
 
 ## 🌎 Versão Ao Vivo
 
